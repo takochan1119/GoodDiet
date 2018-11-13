@@ -1,0 +1,9 @@
+<h1>ユーザー情報</h1>
+<hr>
+<p>名前：<%= @teacher.family_name %><%= @teacher.first_name %>さん</p>
+<p>自己紹介：<%= @teacher.self_introduction %></p>
+<hr>
+<p><a href="/posts" class="btn btn-info">トップに戻る</a></p>
+<p><a href="/teachers" class="btn btn-primary">コンサルタント一覧に戻る</a></p>
+
+<p><a href="/teachers/<%= @teacher.id %>/edit" class="btn btn-success">コンサルタント情報を編集する</a>
